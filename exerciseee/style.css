@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+}
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+h1 {
+  text-align: center;
+}
+.navbar ul {
+  list-style: none;
+  background-color: cornflowerblue;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: black;
+}
+
+.navbar li {
+  float: left;
+}
+.active {
+  background-color: cadetblue;
+  color: black;
+}
+img {
+  max-width: 525px;
+  max-height: 525px;
+}

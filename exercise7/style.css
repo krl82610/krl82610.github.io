@@ -1,0 +1,57 @@
+header {
+  background-color: cornflowerblue;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  box-sizing: border-box;
+  display: block;
+  width: 1440px;
+}
+#navbar {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 1440px;
+}
+#nav-title {
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20pt;
+}
+#nav-menu {
+  align-items: center;
+  background-color: cornflowerblue;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+#nav-item {
+  box-sizing: border-box;
+  color: cornflowerblue;
+  display: list-item;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+#nav-link {
+  box-sizing: border-box;
+  color: white;
+  display: inline;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  text-align: center;
+}

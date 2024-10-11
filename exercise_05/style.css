@@ -1,0 +1,100 @@
+/* This media query defines how the page displays beneath a breakpoint */
+@media (max-width: 767px) {
+  #toggle-nav {
+    display: none; /* display button beneath breakpoint */
+  }
+  #primary-nav {
+    max-height: 0;
+    list-style: none;
+    background-color: cornflowerblue;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+  }
+  #primary-nav li {
+    display: inline-block;
+    padding: 15px;
+  }
+  #primary-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+  }
+  #navtitle {
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 25px;
+    height: 30px;
+  }
+
+  /* Here, we override the rule when the body has a class of nav-open */
+  body.nav-open #primary-nav {
+    max-height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  #primary-nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+  }
+  #primary-nav li {
+    display: block;
+  }
+  body.nav-open #primary-nav {
+    grid-template-rows: 1fr;
+  }
+
+  #toggle-nav {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    position: absolute;
+    top: 0em;
+    right: 0em;
+    display: block;
+  }
+}
+.inner {
+  overflow: hidden;
+}
+body {
+  margin: 0px;
+}
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+h1 {
+  text-align: center;
+}
+.navbar ul {
+  list-style: none;
+  background-color: cornflowerblue;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: black;
+}
+
+.navbar li {
+  float: left;
+}
+.active {
+  background-color: cadetblue;
+  color: black;
+}
