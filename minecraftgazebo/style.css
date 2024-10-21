@@ -96,10 +96,6 @@ h1 {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
-.icon {
-  max-height: 96px;
-  max-width: 96px;
-}
 
 @media screen and (max-width: 780px) {
   .hamburger {
