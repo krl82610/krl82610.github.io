@@ -1,14 +1,15 @@
 * body {
-  margin: 0px;
+  margin: 0;
 }
 main {
   margin-left: 20px;
   margin-right: 20px;
 }
+#navbar {
+  display: flex;
+}
 .navbar {
-  display: flex;
   background-color: rgba(131, 137, 118, 1);
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
@@ -20,9 +21,10 @@ main {
 }
 .navbar ul {
   list-style: none;
-  padding: 0px;
+  padding: 0;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
 }
 .navbar a {
   color: white;
@@ -37,7 +39,6 @@ main {
 }
 
 .navbar li {
-  float: left;
   text-align: center;
 }
 .active {
@@ -124,8 +125,7 @@ h1 {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    width: 100%;
+    width: calc(100% - 40px);
     text-align: center;
     transition: 0.3s;
   }
@@ -139,12 +139,17 @@ h1 {
     font-size: 40pt;
   }
   .navbar ul {
-    display: none; /* Hide the menu initially */
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 226px;
     left: 0;
     background-color: rgba(131, 137, 118, 1);
+  }
+  #list {
+    display: none; /* Hide the menu initially */
+  }
+  #list.active {
+    display: block;
   }
 }
