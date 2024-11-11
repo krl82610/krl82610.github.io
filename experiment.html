@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billie Eilish Biography</title>
+    <style>
+      /* General Styles */
+      body,
+      h1,
+      h2,
+      p,
+      a,
+      img {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Header and Navigation */
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #f8f9fa;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-item .nav-link {
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+      }
+
+      /* Main Container */
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #f6f6bf;
+      }
+
+      /* Title Box */
+      .box-purchase {
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(246, 246, 191);
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      /* Title and Subtitle */
+      .home-title {
+        font-size: 40px;
+        color: black;
+      }
+
+      .home-subtitle {
+        font-size: 24px;
+        color: black;
+        margin-top: 10px;
+      }
+
+      /* Button */
+      .redirect-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 15px;
+        transition: background-color 0.3s ease;
+      }
+
+      .redirect-button:hover {
+        background-color: #45a049;
+      }
+
+      /* Image */
+      .img-home {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: rgba(166, 199, 249, 1);
+        height: 50px;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img src="../logo.jpg" alt="nav-branding" />
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" id="active">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="../book/index.html" class="nav-link">BOOK</a>
+          </li>
+          <li class="nav-item">
+            <a href="../author/index.html" class="nav-link">AUTHOR</a>
+          </li>
+          <li class="nav-item">
+            <a href="../reviews/index.html" class="nav-link">REVIEWS</a>
+          </li>
+          <li class="nav-item">
+            <a href="../purchase/index.html" class="nav-link">PURCHASE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="box-purchase">
+          <h1 class="home-title">BILLIE EILISH BIOGRAPHY</h1>
+          <h2 class="home-subtitle">Ana Huang</h2>
+          <a href="../book/index.html" class="redirect-button">READ MORE</a>
+        </div>
+        <div><img src="bookcover.jpg" class="img-home" alt="Book cover" /></div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>
