@@ -10,10 +10,10 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="#" class="nav-branding">CALLIDUS</a>
+        <img src="../logo.jpg" alt="nav-branding">
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="../home/index.html" class="nav-link">HOME</a>
+            <a href="index.html" class="nav-link" id="active">HOME</a>
           </li>
           <li class="nav-item">
             <a href="../book/index.html" class="nav-link">BOOK</a>
@@ -25,7 +25,7 @@
             <a href="../reviews/index.html" class="nav-link">REVIEWS</a>
           </li>
           <li class="nav-item">
-            <a href="index.html" class="nav-link" id="active">PURCHASE</a>
+            <a href="../purchase/index.html" class="nav-link">PURCHASE</a>
           </li>
         </ul>
         <div class="hamburger">
@@ -35,25 +35,26 @@
         </div>
       </nav>
     </header>
-    <body>
-      <!-- feature -->
-      <div class="feature">
-        <div class="bg"></div>
-  
-        <!-- flex box -->
-        <div class="flexpurchase">
-          <div class="featureimg">
-            <img src="bookcover.jpg" alt="Billie" />
+      <main>
+        <div class="container">
+          <div class="box-purchase">
+              <h1 class="home-title">BILLIE EILISH BIOGRAPHY</h1>
+              <h2 class="home-subtitle">Ana Huang</h2>
+              <div><a href="../book/index.html" class="redirect-button">READ MORE</a></div>
           </div>
-          <div class="featuretext">
-            <h1>BILLIE EILISH BIOGRAPHY</h1>
-            <h3 class="h3">Ana Huang</h3>
-            <div><a href="#" class="redirect-button">ADD TO CART</a></div>
-          </div>
-        </div>
+          <div><img src="bookcover.jpg" class="img-home" alt="Book cover"></div>
       </div>
-      <!-- /feature -->
-
+    <div class="container">
+      <div class="box-purchase">
+        <h1 class="home-title">ANA HUANG</h1>
+        <h2 class="home-subtitle">Best Selling Author</h2>
+              <a href="../author/index.html" class="redirect-button">READ MORE</a>
+      </div>
+      <div><img src="author.jpg" class="img-home"></img></div>
+  </div>
+    </main>
+      <div class="footer"></div>
+    </main>
     <script src="../script.js"></script>
   </body>
 </html>

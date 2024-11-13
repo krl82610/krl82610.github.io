@@ -14,19 +14,19 @@ a {
   text-decoration: none;
 }
 .navbar {
-  min-height: 100px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 80px;
-  z-index: 3;
+  max-width: 1440px;
 }
 .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-  z-index: 3;
+  max-width: 1440px;
 }
 .nav-branding {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -56,88 +56,32 @@ a {
   text-decoration: underline;
   font-weight: 600;
 }
-.h1 {
-  font-size: 50px;
-  color: rgb(0, 0, 0);
-  padding: 0 80px;
-  line-height: 250px;
-}
-.home-title {
-  font-size: 40px;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  margin: 0;
-  padding-left: 425px;
-  text-align: center;
-}
-.home-subtitle {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  color: rgb(0, 0, 0);
-  margin-top: 10px;
-  padding-left: 425px;
-  text-align: center;
-}
-.purchase-title {
-  font-size: 40px;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  margin: 0;
-  padding-left: 80px;
-}
-.purchase-subtitle {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  color: rgb(0, 0, 0);
-  margin-top: 10px;
-  padding-left: 80px;
-}
+
 .redirect-button {
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px 20px;
   font-size: 16px;
   background-color: rgba(67, 99, 58, 1);
   color: white;
+  margin-top: 50px;
+  row-gap: 50x;
   border: none;
   cursor: pointer;
-  margin-left: 901px;
-  transition: background-color 0.3s ease;
-}
-.redirect-button-purchase {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: rgba(67, 99, 58, 1);
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-left: 80px;
   transition: background-color 0.3s ease;
 }
 .redirect-button:hover {
   background-color: #45a049;
 }
-#vertical-center {
-  line-height: 250px;
+.footer {
+  background-color: rgba(166, 199, 249, 1);
+  height: 50px;
+  padding: 40px;
+  margin-top: 100px;
 }
-.home-author {
-  font-size: 40px;
+.h1 {
+  font-size: 50px;
   color: rgb(0, 0, 0);
-  padding-left: 870px;
-  line-height: 250px;
-}
-.book-title {
-  font-size: 40px;
-  color: rgb(0, 0, 0);
-  padding-left: 80px;
-  line-height: 250px;
-}
-.author-title {
-  font-size: 40px;
-  color: rgb(0, 0, 0);
-  margin: 0 80px;
+  padding: 0 80px;
   line-height: 250px;
 }
 .h2 {
@@ -149,10 +93,8 @@ a {
 }
 .h3 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  padding: 0 80px;
-  margin-top: 50px;
-  color: black;
+  font-size: 18px;
+  font-weight: 300;
 }
 .body {
   font-family: Arial, Helvetica, sans-serif;
@@ -160,125 +102,209 @@ a {
   padding: 0 80px;
   margin-top: 20px;
 }
-.body-book {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  padding-left: 80px;
-  padding-right: 55px;
-  width: 1000px;
-}
-.body-author {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin-left: 600px;
-  margin-top: 20px;
-  width: 800px;
-}
-.body-top-author {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin-left: 600px;
-  margin-top: 98px;
-  width: 800px;
-}
 .box-reviews {
-  background-color: rgb(246, 246, 191);
+  background-color: #f3f3cd;
   margin: 0 auto;
   max-width: 100%;
-  height: 250px;
+  height: 220px;
   align-items: center;
   margin-top: 100px;
 }
-.img-purchase {
-  position: relative;
-  z-index: 2;
-  margin-top: 100px;
-  padding: 0 1032px;
+#reviews {
+  line-height: 220px;
 }
-.box-purchase {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+
+body {
+  margin: 0;
+}
+
+img {
   width: 100%;
-  background-color: rgb(246, 246, 191);
-  z-index: 1;
-  margin: 0 auto;
-  max-width: 100%;
-  height: 250px;
-  align-items: center;
-  margin-top: 250px;
+  height: auto;
 }
-.box-book {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  background-color: rgb(246, 246, 191);
-  z-index: 1;
-  margin: 0 auto;
-  max-width: 100%;
-  height: 250px;
-  align-items: center;
-  margin-top: 125px;
+/* REMOVE THIS 
+div {
+  border: 2px dotted lightgray;
 }
-.img-home {
+  */
+.feature {
   position: relative;
-  z-index: 2;
-  margin-top: 100px;
-  padding: 0 80px;
+  margin-bottom: 200px;
 }
-.img-author {
-  position: relative;
-  z-index: 2;
-  margin-top: 100px;
-  padding: 0 80px;
+.featureimg {
+  width: 400px;
+  margin-top: 60px;
 }
-.img-book {
-  position: relative;
-  z-index: 2;
-  align-items: left;
-  margin-top: 100px;
-  padding: 0 80px;
+.featuretext {
+  text-align: center;
+  height: 200px;
+  margin-top: 310px;
+  max-width: 1440px;
 }
-.body-book {
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  position: relative;
-  top: -300px;
-  margin-bottom: 500px;
-}
-.container {
-  padding-top: 0;
-  position: relative;
-  width: 100%;
-  height: 750px;
-}
-.footer {
-  background-color: rgba(166, 199, 249, 1);
-  height: 50px;
-  padding: 40px;
-  margin-top: 100px;
-}
-.footer-book {
-  background-color: rgba(166, 199, 249, 1);
-  height: 50px;
-  padding: 40px;
-  margin-top: 100px;
-}
-.footer-purchase {
-  background-color: rgba(166, 199, 249, 1);
-  height: 50px;
-  padding: 40px;
+.featuretextbook {
+  text-align: left;
+  height: 200px;
   margin-top: 200px;
 }
-.purchase {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  padding: 0 80px;
-  margin-top: 20px;
-  color: rgba(67, 99, 58, 1);
+.feature .bg {
+  background-color: #f3f3cd;
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  z-index: -1;
+  top: 240px;
 }
-@media (max-width: 768px) {
+.feature .bgbook {
+  background-color: #f3f3cd;
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  z-index: -1;
+  top: 120px;
+}
+.feature .flex {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+}
+.feature .flexpurchase {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  flex-direction: row-reverse;
+}
+#content {
+  padding-left: 46%;
+  padding-right: 100px;
+  margin-top: -300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.featuretextauthor {
+  text-align: left;
+  height: 200px;
+  margin-top: 310px;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+  padding: 60px;
+}
+#authorcontent {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-left: 200px;
+}
+#authorcontent2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-right: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .feature .flex {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .featureimg {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .featureimg img {
+    width: 300px;
+  }
+  .feature .bg {
+    display: none;
+  }
+  .featuretext {
+    margin-top: 0;
+    background-color: #f3f3cd;
+    margin-bottom: -190px;
+    padding-top: 65px;
+  }
+  .featuretextbook {
+    margin-top: 0;
+    background-color: #f3f3cd;
+    margin-bottom: -190px;
+    padding-top: 65px;
+    text-align: center;
+  }
+  .feature .bgbook {
+    display: none;
+  }
+  #content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 220px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .featuretextauthor {
+    margin-top: 0;
+    background-color: #f3f3cd;
+    margin-bottom: -190px;
+    padding-top: 65px;
+    text-align: center;
+  }
+  .column {
+    flex-direction: column;
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  #authorcontent {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 230px;
+    margin-left: 0;
+    text-align: center;
+  }
+  #authorcontent2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0;
+    padding: 40px;
+    margin-top: -40px;
+  }
+  .feature .flexpurchase {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0 80px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 0 80px;
+    margin-top: 50px;
+    color: rgba(67, 99, 58, 1);
+    text-align: center;
+  }
+  .h1 {
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    padding: 0 80px;
+    line-height: 250px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
   .hamburger {
     display: block;
   }
@@ -308,58 +334,6 @@ a {
   }
   .nav-menu.active {
     left: 0;
-  }
-  .h1 {
-    font-size: 40px;
-  }
-  .body-author {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin-left: 80px;
-    margin-top: 20px;
-    width: 400px;
-  }
-  .body-top-author {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin-left: 80px;
-    margin-top: 730px;
-    width: 400px;
-  }
-  .body-book {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    width: 530px;
-    margin-top: 325px;
-  }
-  .book-title {
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    padding-left: 80px;
-    line-height: 250px;
-  }
-  .img-purchase {
-    position: relative;
-    margin-top: 400px;
-    padding: 0 80px;
-  }
-  .footer-book {
-    background-color: rgba(166, 199, 249, 1);
-    height: 50px;
-    margin-top: 800px;
-  }
-  .box-purchase {
-    background-color: rgb(246, 246, 191);
-    margin: 0 auto;
-    max-width: 100%;
-    height: 250px;
-    align-items: center;
-    margin-top: 100px;
-  }
-  .img-home {
-    position: relative;
-    margin-top: 400px;
-    padding: 0 80px;
+    z-index: 100;
   }
 }

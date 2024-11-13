@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Billie Eilish Biography - Book Promotion</title>
+    <style>
+      /* General Styling */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      /* Header and Navigation */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: #222;
+      }
+
+      .nav-logo {
+        height: 50px;
+      }
+
+      .nav-menu {
+        list-style: none;
+        display: flex;
+      }
+
+      .nav-link {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 16px;
+        transition: color 0.3s;
+      }
+
+      .nav-link:hover {
+        color: #4caf50;
+      }
+
+      /* Hero Section */
+      .hero {
+        display: flex;
+        align-items: center;
+        padding: 40px;
+        background-color: #f4f4f4;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .hero-text {
+        flex: 1;
+      }
+
+      .hero h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      .hero h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        color: #555;
+      }
+
+      .hero p {
+        font-size: 1.1em;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .cta-button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .cta-button:hover {
+        background-color: #45a049;
+      }
+
+      .hero-img {
+        flex: 1;
+        max-width: 400px;
+        height: auto;
+      }
+
+      /* Section Styling */
+      .section {
+        padding: 40px 30px;
+        text-align: center;
+      }
+
+      .section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+
+      .section p {
+        font-size: 1.1em;
+        line-height: 1.6;
+      }
+
+      /* Author Section */
+      .author-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        text-align: left;
+      }
+
+      .author-img {
+        width: 150px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      /* Reviews Section */
+      .reviews {
+        background-color: #fafafa;
+      }
+
+      .review {
+        padding: 20px;
+        font-style: italic;
+        color: #444;
+      }
+
+      .review span {
+        display: block;
+        margin-top: 10px;
+        font-size: 0.9em;
+        color: #888;
+      }
+
+      /* Purchase Section */
+      .purchase-button {
+        padding: 15px 30px;
+        background-color: #4caf50;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .purchase-button:hover {
+        background-color: #45a049;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #222;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <img src="logo.jpg" alt="Site Logo" class="nav-logo" />
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About the Book</a></li>
+          <li><a href="#author" class="nav-link">About the Author</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#purchase" class="nav-link">Purchase</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Book Overview -->
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <h1>Billie Eilish: The Untold Story</h1>
+          <h2>By Ana Huang</h2>
+          <p>
+            A deep dive into the life and journey of one of the most iconic
+            artists of our generation.
+          </p>
+          <a href="#purchase" class="cta-button">Buy Now</a>
+        </div>
+        <img
+          src="bookcover.jpg"
+          alt="Billie Eilish Biography Cover"
+          class="hero-img"
+        />
+      </section>
+
+      <!-- About the Book Section -->
+      <section id="about" class="section">
+        <h2>About the Book</h2>
+        <p>
+          This biography offers an in-depth look at the life of Billie Eilish,
+          her meteoric rise to fame, and the challenges she has faced along the
+          way. With exclusive insights, behind-the-scenes stories, and a unique
+          narrative, this book is a must-read for fans.
+        </p>
+      </section>
+
+      <!-- About the Author Section -->
+      <section id="author" class="section">
+        <h2>About the Author</h2>
+        <div class="author-info">
+          <img src="author.jpg" alt="Author Ana Huang" class="author-img" />
+          <p>
+            Ana Huang is an acclaimed biographer known for her engaging writing
+            style and her ability to capture the essence of her subjects. With
+            several bestsellers, she brings her expertise to this biography of
+            Billie Eilish.
+          </p>
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section id="reviews" class="section reviews">
+        <h2>What People Are Saying</h2>
+        <div class="review">
+          <p>“A compelling narrative that sheds light on Billie's world.”</p>
+          <span>- The Music Journal</span>
+        </div>
+        <div class="review">
+          <p>
+            “An insightful, honest biography that captures the essence of an
+            icon.”
+          </p>
+          <span>- Celebrity Reads</span>
+        </div>
+      </section>
+
+      <!-- Purchase Section -->
+      <section id="purchase" class="section">
+        <h2>Purchase the Book</h2>
+        <a href="https://example.com" target="_blank" class="purchase-button"
+          >Order Now</a
+        >
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Billie Eilish Biography. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
