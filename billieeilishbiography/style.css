@@ -63,11 +63,11 @@ a {
   font-size: 16px;
   background-color: rgba(67, 99, 58, 1);
   color: white;
-  margin-top: 50px;
-  row-gap: 50x;
+  margin-top: 20px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  display: inline-block;
 }
 .redirect-button:hover {
   background-color: #45a049;
@@ -140,6 +140,7 @@ div {
   height: 200px;
   margin-top: 310px;
   max-width: 1440px;
+  width: 450px;
 }
 .featuretextbook {
   text-align: left;
@@ -226,7 +227,8 @@ div {
     margin-top: 0;
     background-color: #f3f3cd;
     margin-bottom: -190px;
-    padding-top: 65px;
+    padding-top: 45px;
+    width: 100%;
   }
   .featuretextbook {
     margin-top: 0;
