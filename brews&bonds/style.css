@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: rgba(42, 53, 58, 1);
+}
+li {
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.navbar {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  z-index: 3;
+}
+.nav-link {
+  transition: 0.7 ease;
+}
+.nav-link:hover {
+  transition: 0.7 ease;
+  font-weight: 600;
+}
+.nav-branding {
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.logo-img {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 65px;
+}
+.mobile-logo-img {
+  display: none;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(255, 255, 255);
+}
+#active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+.nav-font {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.title-strip {
+  height: 250px;
+  background-color: rgba(238, 234, 223, 1);
+  margin-top: 50px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.strip-home {
+  height: 250px;
+  background-color: rgba(238, 234, 223, 1);
+  margin-bottom: 40px;
+  margin-top: -135px;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+.strip-home-text {
+  font-family: "Libre Bodoni", serif;
+  font-size: 26px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: underline;
+  padding-top: 173px;
+}
+.strip-home-text:hover {
+  font-family: "Libre Bodoni", serif;
+  font-size: 26px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  color: rgba(42, 53, 58, 1);
+  font-style: italic;
+  text-decoration: underline;
+  padding-top: 173px;
+  font-weight: 100;
+}
+
+.img-top {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.img-middle {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.img-bottom {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.background-text {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Bodoni", serif;
+  font-size: 125px;
+  opacity: 0.05;
+  line-height: 250px;
+}
+.cursive-text {
+  font-family: "Fleur De Leah", regular;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 250px;
+  margin-top: -255px;
+  margin-left: 40px;
+  z-index: 3;
+}
+#kerning {
+  font-kerning: 1000px;
+  letter-spacing: 60px;
+}
+.about-copy {
+  display: flex;
+  margin: auto;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  max-width: 600px;
+  text-align: justify;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.reviews-copy {
+  display: flex;
+  margin: auto;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  max-width: 600px;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+}
+.reviews-rating {
+  display: flex;
+  margin: auto;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  max-width: 600px;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+#center {
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  background-color: rgba(199, 221, 227, 1);
+  height: 200px;
+  margin-top: 50px;
+}
+.footer-header {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 38px;
+  padding-bottom: 20px;
+}
+.footer-text {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.p {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.logo-font {
+  font-family: "Libre Bodoni", serif;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+.blue-box {
+  height: 1400px;
+  margin: auto;
+  z-index: -1;
+  background-color: rgba(42, 53, 58, 1);
+}
+.note {
+  max-width: 450px;
+  margin: auto;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 10px;
+  text-align: justify;
+}
+.menu-container {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
+.menu-header {
+  font-size: 26px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+  color: rgb(0, 0, 0);
+}
+#padding-bottom {
+  padding-bottom: 20px;
+}
+#padding-top {
+  padding-top: 20px;
+}
+#subheading {
+  font-weight: 550;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-size: 20px;
+  font-family: "Manrope", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.item-price {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family: "Manrope", sans-serif;
+}
+.schedule-container {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
+.schedule-header {
+  font-size: 24px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+  color: rgb(0, 0, 0);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-body {
+  font-size: 18px;
+  font-family: "Manrope", sans-serif;
+  color: rgb(0, 0, 0);
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 2.2rem;
+    z-index: 4;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  header {
+    background-color: rgba(42, 53, 58, 1);
+    height: 100px;
+  }
+  .nav-menu {
+    position: fixed;
+    padding-bottom: 8px;
+    left: -100%;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(42, 53, 58, 1);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 200px;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .about-copy {
+    display: flex;
+    margin: auto;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .reviews-copy {
+    display: flex;
+    margin: auto;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .reviews-rating {
+    display: flex;
+    margin: auto;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .footer {
+    background-color: rgba(199, 221, 227, 1);
+    height: 150px;
+    margin-top: 30px;
+  }
+  .footer-header {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer-text {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+  .title-strip {
+    height: 235px;
+    background-color: rgba(238, 234, 223, 1);
+    margin-top: 50px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .background-text {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: "Libre Bodoni", serif;
+    font-size: 90px;
+    opacity: 0.05;
+    line-height: 250px;
+  }
+  .cursive-text {
+    font-family: "Fleur De Leah", regular;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-wrap: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 250px;
+    margin-top: -265px;
+    margin-left: 40px;
+    z-index: 3;
+  }
+  #kerning {
+    font-kerning: 1000px;
+    letter-spacing: 50px;
+  }
+  .item-name {
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    color: rgb(0, 0, 0);
+  }
+
+  .item-price {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: "Manrope", sans-serif;
+  }
+  .menu-header {
+    font-size: 18px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+    color: rgb(0, 0, 0);
+  }
+  .note {
+    max-width: 450px;
+    margin: auto;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 10px;
+    text-align: justify;
+  }
+  .logo-img {
+    display: none;
+  }
+}
