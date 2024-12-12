@@ -48,6 +48,8 @@ a {
   justify-content: center;
   align-items: center;
   padding-top: 65px;
+  max-height: 200px;
+  max-width: 850px;
 }
 .mobile-logo-img {
   display: none;
@@ -207,19 +209,19 @@ a {
 }
 .footer {
   background-color: rgba(199, 221, 227, 1);
-  height: 200px;
-  margin-top: 50px;
+  height: 175px;
+  margin-top: 45px;
 }
 .footer-header {
   font-family: "Manrope", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   padding-top: 38px;
   padding-bottom: 20px;
 }
 .footer-text {
   font-family: "Manrope", sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   text-align: center;
 }
 .p {
@@ -249,7 +251,7 @@ a {
   text-align: justify;
 }
 .menu-container {
-  max-width: 250px;
+  max-width: 450px;
   margin: 0 auto;
   margin-top: -10px;
 }
@@ -270,7 +272,7 @@ a {
   padding-top: 20px;
 }
 #subheading {
-  font-weight: 550;
+  font-weight: 650;
 }
 .menu-item {
   display: flex;
@@ -392,19 +394,19 @@ a {
   }
   .footer {
     background-color: rgba(199, 221, 227, 1);
-    height: 150px;
+    height: 140px;
     margin-top: 30px;
   }
   .footer-header {
     font-family: "Manrope", sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 24px;
     padding-bottom: 20px;
   }
   .footer-text {
     font-family: "Manrope", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
   }
   .title-strip {
@@ -473,6 +475,10 @@ a {
     text-align: justify;
   }
   .logo-img {
-    display: none;
+    position: absolute;
+    justify-content: center;
+    margin-top: -48px;
+    margin-left: 18px;
+    max-width: 300px;
   }
 }
